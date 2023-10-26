@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: #272727;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container div{
+    margin: 60px 0;
+}
+
+button{
+    padding: 12px 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: #dd203c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adiciona uma transição suave*/
+}
+
+button:active {
+    background-color: #000000; /* Define a cor azul enquanto pressionado*/
+}
+
+
+input{
+    min-width: 300px;
+    padding: 12px 15px;
+    border: none;
+    border-bottom: 1px solid #272727;
+}
+
+input:focus{
+    outline: none;
+}
+
+.barra_lateral{
+    width: 60px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    background-color: #dd203c;
+}
+
+
+/* Defina o estilo do botão */
+button2 {
+    background-color: #dd203c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Posicione o botão no canto superior direito */
+button2 {
+    position: fixed;
+    top: 10px; /* Ajuste a distância do topo conforme necessário */
+    right: 10px; /* Ajuste a distância da direita conforme necessário */
+}
+
+/* Estilo do corpo da página para o modo claro */
+body.light-mode {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Estilo do corpo da página para o modo escuro */
+body.dark-mode {
+    background-color: #333;
+    color: #ffffff;
+}
